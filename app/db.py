@@ -1,11 +1,12 @@
 import mysql.connector
 from flask import app
-from '..config' import config
+from ..config import Config
+import mysql.connector
 
 #conectando ao banco de dados
 def create_db_connection():
     db_config = {
-        'user': DB_USER,
+        'user': Config.DB_USER,
         'password': Config.DB_PASSWORD,
         'host': Config.DB_HOST,
         'database': Config.DB_NAME,

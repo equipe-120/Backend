@@ -1,7 +1,7 @@
 from flask import Flask
 from .db import db
 from .models import User
-from .routes import bp
+from flask_mysqldb import MySQL
 
 
 
