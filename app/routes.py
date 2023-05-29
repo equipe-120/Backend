@@ -32,8 +32,6 @@ def user_profile():
     return render_template('user_profile.html', user_data=user_data)
 
 
-
-
 #atualizacao de user
 @app.route('/user_profile/update', methods=['POST'])
 def update_user_profile():
@@ -45,8 +43,6 @@ def update_user_profile():
     # Atualize os dados do usuário no banco de dados
     update_user(user_id, new_data)
     return redirect(url_for('user_profile'))
-
-
 
 
 #deletando usuario

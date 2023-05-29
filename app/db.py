@@ -8,7 +8,7 @@ app.config['MYSQL_DB'] = MYSQL_DB
 #conectando ao banco de dados
 def create_db_connection():
     db_config = {
-        'user': Config.DB_USER,
+        'user': MYSQL_USER,
         'password': Config.DB_PASSWORD,
         'host': Config.DB_HOST,
         'database': Config.DB_NAME,
